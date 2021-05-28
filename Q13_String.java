@@ -12,12 +12,12 @@ class Strings
 			int c=-1,f;
 			for(String k : wc1){
 				f=0;
-				for(int i=0;i<c;i++){
+				for(int i=0;i<=c;i++){
 					if(k.equalsIgnoreCase(wc2[i]))f++;
 				}
 				if(f==0){wc2[++c]=k;}
 			}
-			for(int k=0;k<c;k++){
+			for(int k=0;k<=c;k++){
 				int n=0;
 				for(String i : wc1){
 					if(wc2[k].equalsIgnoreCase(i))n++;
